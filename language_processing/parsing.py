@@ -55,3 +55,20 @@ try:
 except ValueError as e:
     print(f"Error parsing sentence: '{''.join(sentence2)}': {e}")
 
+'''
+Statistical parsing:
+learn the probabilities of different grammatical structures occurring based on the training data. 
+When presented with a new sentence, the parser calculates the likelihood of various possible parse 
+trees and selects the one with the highest probability.
+
+1. Probabilistic Context-Free Grammar (PCFG):
+   - Assigns probabilities to each production rule in a context-free grammar.
+2. Treebanks:
+   - Annotated corpora that provide examples of sentences and their corresponding parse trees.
+   - Used to train the parser to learn the probabilities of different structures.
+3. Parsing algorithms like CKY(Cocke-Younger-Kasami) or Earley parser:
+4. Dependency parsing:
+   - Focuses on the relationships between words in a sentence rather than their hierarchical structure.
+   - Represents sentences as directed graphs, where nodes are words and edges represent dependencies.
+   - Useful for tasks like information extraction, sentiment analysis, and machine translation.
+'''
